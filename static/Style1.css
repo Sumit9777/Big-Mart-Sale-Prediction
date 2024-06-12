@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(to left, #667292 0%, #a2b9bc 100%);
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.centerdiv {
+    height: 15vh;
+    display: flex;
+    justify-content: center; /* Uncomment to center horizontally */
+    align-items: center;
+}
+
+.centerdiv a {
+    height: 30px;
+    width: 30px;
+    background-color: #f5f6fa;
+    border-radius: 50px;
+    text-align: center;
+    margin: 5px;
+    line-height: 30px; /* Specify line height in pixels */
+    position: relative;
+    overflow: hidden;
+}
+
+.centerdiv a i {
+    transition: all 0.3s linear;
+}
+
+.centerdiv a:hover i {
+    transform: scale(1.5);
+    color: #f5f6fa;
+}
+
+.centerdiv a:before {
+    content: "";
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: 90%;
+    left: -50%;
+    background-color: #00a8ff;
+    transform: rotate(60deg);
+}
+
+.centerdiv a:hover:before {
+    animation: socialicons 0.8s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes socialicons {
+    0% {
+        top: 90%;
+        left: -50%;
+    }
+    50% {
+        top: -60%;
+        left: -10%;
+    }
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+.fa-facebook-f {
+    color: #3b5998; /* Facebook color */
+}
+
+.fa-instagram {
+    color: #e4405f; /* Instagram color */
+}
+
+.fa-github {
+    color: #333; /* GitHub color */
+}
+
+.fa-linkedin {
+    color: #0e76a8; /* LinkedIn color */
+}
+
+.fa-twitter {
+    color: #1da1f2; /* Twitter color */
+}

@@ -1,0 +1,48 @@
+/* Result.css */
+
+/* Set background color to black */
+body {
+    background-color: black;
+}
+
+/* Set text color to white */
+h1, p {
+    color: white;
+}
+
+/* Align text center */
+h1, p {
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Increase size of text */
+h1 {
+    font-size: 80px; /* You can adjust the size as needed */
+}
+
+/* Make text bold */
+h1, p {
+    font-weight: bold;
+}
+
+/* Style the learn more button */
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b0deb1; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+    background-color: #08f714; /* Darker green */
+}
+.button{
+    align-items: center;
+    text-align: center;
+}

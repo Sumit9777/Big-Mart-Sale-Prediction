@@ -1,0 +1,465 @@
+/* //////////////// FONT //////////////// */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* //////////////// VARIABLES //////////////// */
+:root {
+  --white-color: #eeeeee;
+  --blue-color: #00bfff;
+  --dark-color: #120052;
+  --gold-color: #ffae00;
+  --purple-color:#ff00cc;
+}
+
+/* //////////////// DEFAULT //////////////// */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* //////////////// HEADER SECTION //////////////// */
+.header-section {
+  background: #00bfff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #333399,
+    #00bfff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #333399,
+    #00bfff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* ********** MENU ********** */
+.header-section nav {
+  width: 100%;
+  height: 80px;
+}
+
+
+nav ul {
+  float: right;
+  margin-right: 50px;
+}
+
+nav ul li {
+  line-height: 100px;
+  display: inline-block;
+  margin: 0px 5px;
+  border-radius: 5px;
+}
+
+nav ul li a {
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  padding: 5px 10px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+}
+
+#icon i {
+  color: var(--white-color);
+  font-size: 30px;
+  line-height: 80px;
+  margin-right: 80px;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+/* ********** HEADER CONTENT BOX ********** */
+.header-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px;
+}
+
+.content-box {
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-box h1 {
+  color: var(--white-color);
+  font-size: 70px;
+  letter-spacing: 2px;
+  text-align: left ;
+}
+
+
+
+.image-box img {
+  height: 500px;
+  display: flex;
+  width: auto;
+  margin-left:50px;
+  animation: imageanimate 3s linear infinite alternate;
+}
+
+@keyframes imageanimate {
+  0% {
+    transform: translate(0px, 25px);
+  }
+  50% {
+    transform: translate(0px, -25px);
+  }
+  100% {
+    transform: translate(0px, 25px);
+  }
+}
+
+/* //////////////// INFORMATION SECTION //////////////// */
+.information-section {
+  margin: 100px 50px;
+}
+
+.info-title {
+  padding-bottom: 100px;
+}
+
+.info-title h2{
+  text-align: center;
+  font-size:50px;
+}
+.info-title p {
+  text-align: center;
+  font-size: 30px;
+}
+
+
+/* //////////////// MAC SECTION //////////////// */
+.mac-section {
+  margin: 100px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-box-mac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box-mac1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box-mac img {
+  height: 500px;
+  transition: transform 0.3s ease;
+}
+.image-box-mac img:hover {
+  transform: scale(1.2); /* Adjust the scale factor for the desired zoom level */
+}
+
+.image-box-mac1 img{
+  height: 500px;
+  transition: transform 0.3s ease;
+}
+.image-box-mac1 img:hover {
+  transform: scale(1.2); /* Adjust the scale factor for the desired zoom level */
+}
+
+.content-mac h2 {
+  font-size: 50px;
+  padding-bottom: 20px;
+  text-align:justify;
+}
+
+.content-mac p {
+  width: 90%;
+  padding-bottom: 20px;
+  font-size: 30px;
+  justify-content: right;
+  text-align:justify;
+}
+
+
+/* //////////////// IMAGE SECTION //////////////// */
+.image-section {
+  background-image: url("./background.png");
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 50px;
+  margin: 50px 0px 0px 0px;
+}
+
+.image-section h2 {
+  color: var(--white-color);
+  font-size: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.image-section p {
+  text-align: center;
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 2px;
+  width: 60%;
+}
+
+/* //////////////// FOOTER SECTION //////////////// */
+.footer-section {
+  display: grid;
+  padding: 80px 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #00bfff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #333399,
+    #00bfff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #333399,
+    #00bfff
+  ); 
+}
+
+.links-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-box ul li {
+  padding: 5px 0px;
+}
+
+.links-box ul li a {
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box ul li {
+  padding: 10px 0px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.contact-box ul li i {
+  font-size: 25px;
+  color: var(--white-color);
+  padding-right: 10px;
+}
+
+.desc-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc-box i {
+  font-size: 50px;
+}
+
+.desc-box p {
+  text-align: center;
+  line-height: 30px;
+  font-weight: 600;
+  width: 90%;
+  padding-top: 10px;
+  color: var(--white-color);
+}
+
+/* //////////////// COPYRIGHT //////////////// */
+.copyright {
+  background: #00bfff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #333399,
+    #00bfff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #333399,
+    #00bfff
+  ); 
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.copyright span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* //////////////// RESPONSIVE //////////////// */
+
+@media screen and (max-width: 1120px) {
+  /* ********** HEADER CONTENT BOX ********** */
+  .content-box h1 {
+    font-size: 40px;
+  }
+
+  .content-box p {
+    width: 450px;
+  }
+
+  .image-box img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  /* ********** MAC SECTION ********** */
+  .image-box-mac {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* ********** HEADER CONTENT BOX ********** */
+  .content-box h1 {
+    font-size: 35px;
+  }
+
+  .content-box p {
+    width: 400px;
+  }
+
+  .image-box img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  /* ********** MENU ********** */
+  #icon i {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    text-align: center;
+    background: #00bfff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #333399,
+      #00bfff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #333399,
+      #00bfff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: 0.3s;
+    z-index: 1;
+  }
+
+  nav ul li {
+    display: block;
+    line-height: 30px;
+    margin: 50px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  nav ul.show {
+    left: 0;
+  }
+
+  /* ********** HEADER CONTENT BOX ********** */
+  .header-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .content-box h1 {
+    font-size: 28px;
+  }
+
+  .content-box p {
+    width: 350px;
+    font-size: 16px;
+  }
+
+  .image-box {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  /* ********** INFORMATION SECTION ********** */
+  .info-items {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .info-item {
+    padding: 50px 0px;
+  }
+
+  /* ********** MAC SECTION ********** */
+  .mac-section {
+    grid-template-columns: 1fr;
+  }
+
+  .content-mac {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content-mac h2 {
+    text-align: center;
+  }
+
+  .content-mac p {
+    text-align: center;
+  }
+
+  /* ********** FOOTTER ********** */
+  .footer-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .desc-box {
+    grid-row: 1/2;
+  }
+
+  .links-box {
+    margin: 30px 0px;
+  }
+}

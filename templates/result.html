@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Result.css') }}" />
+    <title>Result</title>
+</head>
+<body>
+    <style>
+        /* Result.css */
+
+/* Set background color to black */
+body {
+    background-color: black;
+}
+
+/* Set text color to white */
+h1, p {
+    color: white;
+}
+
+/* Align text center */
+h1, p {
+    text-align: center;
+}
+
+/* Increase size of text */
+h1 {
+    font-size: 80px; /* You can adjust the size as needed */
+}
+
+/* Make text bold */
+h1, p {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* Style the learn more button */
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b0deb1; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+    background-color: #08f714; /* Darker green */
+}
+.button{
+    align-item:center;
+
+}
+    </style><center>
+    <h1>Result</h1>
+    <p>Prediction: {{ prediction }}</p>
+    <p>Click the button below to learn more:</p>
+    <div class="button">
+    <a  href="http://localhost:8501" target="_blank" class="learn-more-button">Learn More</a></div></center>
+</body>
+</html>
