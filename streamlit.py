@@ -4,7 +4,7 @@ import plotly.express as px
 
 # Load data from Excel file
 def load_data():
-    file_path = "C:\\Users\\Sumit\\Desktop\\streamlit\\Train.xlsx"  # Specify the path to your Excel file
+    file_path = "C:\\Users\\Sumit\\Desktop\\por\\Train.xlsx"  # Specify the path to your Excel file
     df = pd.read_excel(file_path)
     return df
 
